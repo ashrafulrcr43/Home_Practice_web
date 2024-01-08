@@ -1,0 +1,349 @@
+Remain Text
+===================
+const inputText = prompt("Enter Your message but your text limite 140 chracter");
+
+alert("you have written "+ inputText.length +" And you have remain"+ (140 -inputText.length ));
+
+
+Limite 140 Chracter
+=================
+/ Collect Data from User
+const inputText = prompt("Enter Your message but your text limite 140 chracter");
+const LimiteChar = inputText.slice(0,140);
+alert(LimiteChar +"\n you have" + LimiteChar.length + " Chracter Only");
+// Check how many Chracter you have write
+
+First Letter Uppercase
+======================
+const name= prompt("Enter your Name");
+const firstCharrstChar = name.slice(0,1);
+const UppFirat = firstChar.toUpperCase();
+const restOfchar = name.slice(1,name.length);
+const ResultChar = UppFirat + restOfchar;
+alert (ResultChar);
+
+Function class:
+================
+function GetMilk(money){
+    console.log("beepersRight");
+    console.log("goUpTurnLeft");
+    console.log("beepersRight");
+    const NumberOfBottle = Math.floor(money / 1.5);
+    console.log("beepersLeft " + NumberOfBottle + " of Milk");
+    console.log("goUpTurnRight");
+    console.log("move");
+    console.log("putBeeper");
+    console.log("beepersRight2");
+    
+}
+GetMilk(5);
+
+Age Remainder Function
+========================
+function DogAge(age){
+    remainage = 90 -age;
+    daysremain = remainage *365;
+    weakremain = remainage * 52;
+    monthRemain = remainage *12;
+
+console.log ("You have Remain "+daysremain+ " days and "+weakremain+" Weak "+monthRemain+" Months");
+}
+
+DogAge(12);
+
+
+Function 2:
+====================
+function variableChange(money){
+    return money % 1.5;
+}
+
+const result= variableChange(5);
+console.log(result);
+
+Function 3:
+=====================
+function GetMilk(money){
+    console.log("beepersRight");
+    console.log("goUpTurnLeft");
+    console.log("beepersRight");
+    const NumberOfBottle = Math.floor(money / 1.5);
+    
+    console.log("beepersLeft " + calculateBottle(money,1.5) + " of Milk");
+    console.log("goUpTurnRight");
+    console.log("move");
+    console.log("putBeeper");
+    console.log("beepersRight2");
+    
+}
+ function calculateBottle(starting,costing){
+     const numberOfBottleCount = Math.floor(starting / costing);
+     return numberOfBottleCount;
+ }
+
+GetMilk(5);
+
+Bmi calculator 
+==========================
+
+function bmiCalculator(width,height){
+    const bmi = width /Math.pow(height,2)
+    return bmi;
+}
+const bmid = Math.floor(bmiCalculator(65,1.8));
+console.log(bmid);
+
+If Else,else if Statement:
+========================
+let marks = prompt("Enter the number");
+
+if(marks >= 80 && marks <=100){
+	alert("You have gotten A+");
+}
+	else if(marks <80 && marks >= 70){
+		alert("You have gotten A");
+	}
+		else if(marks <70 && marks >= 60){
+		alert("You have gotten A -");
+	}
+		else if(marks <60 && marks >= 50){
+		alert("You have gotten B");
+	}
+		else if(marks <50 && marks >= 40){
+		alert("You have gotten C");
+	}
+	else if(marks <40 && marks >= 33){
+		alert("You have gotten D");
+	}
+else {
+	alert("You have not Passed:");
+}
+
+
+
+Random Number:
+=====================
+const n = Math.random();
+const l = n*6;
+const m = Math.floor(l);
+console.log(m);
+
+
+function isLeap(year){
+    if(year % 4 ===0)
+        if(year % 100 ===0){
+            if(year % 400 ===0){
+                return "leap year"
+            }
+        }else{
+            return "Leap Year"
+        }
+    else {
+    return "Not Leap Year"
+}
+
+}
+result = isLeap(2000)
+alert(result);
+
+
+Arry function:
+==============
+const gestList = ["ashraful","hasan","kamrul","jamal"]
+const gestName = prompt("Enter your name:");
+
+ if(gestList.includes(gestName)){
+     alert(gestName+ " ,wellcome to our party")
+ }else {
+     alert (gestName + ", Sorry you are not allow");
+ }
+
+
+
+Array autocounting:
+======================
+let outPut = [];
+let count = 1;
+
+function fizzBuzz(){
+
+outPut.push(count);
+    
+    console.log(outPut);
+    
+};
+fizzBuzz()
+
+Array autocounting: 2
+======================
+let outPut = [];
+let count = 1;
+
+function fizzBuzz(){
+outPut.push(count);
+count ++ ; //count = count +1;
+    console.log(outPut);
+    
+};
+
+FizzBuzz Solution:
+====================
+let outPut = [];
+let count = 1;
+
+function fizzBuzz(){
+
+    if(count % 3 === 0 && count % 5 === 0){
+        outPut.push("FizzBuzz");
+    }else if(count % 3 ===0){
+        outPut.push("Fizz")
+    }else if(count % 5 === 0){
+        outPut.push("Buzz");
+    }else {
+        outPut.push(count);
+    }
+   count++;
+    console.log(outPut);
+}
+
+
+Array Random function:
+============================
+
+let names = ["angla","jen","jara","kara"];
+
+function whoPlaying(names){
+    let numberOfPerson = names.length;
+    let peoplePosition = Math.floor(Math.random()* numberOfPerson);
+    let randomPerson = name[peoplePosition];
+    return randomPerson + " is going to Lunch";
+}
+
+whoPlaying(names);
+
+while Loop:
+============
+let outPut = [];
+let count = 1;
+
+function fizzBuzz(){
+    while(count <= 100){
+    if(count % 3 === 0 && count % 5 === 0){
+        outPut.push("FizzBuzz");
+    }else if(count % 3 ===0){
+        outPut.push("Fizz")
+    }else if(count % 5 === 0){
+        outPut.push("Buzz");
+    }else {
+        outPut.push(count);
+    }
+   count++;
+      }
+    console.log(outPut);
+}
+====================
+ Solution to the 99 Bottles Challenge
+=========================================
+let numberOfBottles = 99;
+while (numberOfBottles >= 0) {
+    let bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
+Javascript input Website:
+=========================
+document.querySelector("h3").innerHTML = "I Love Bangladesh"
+
+
+Arry For In Loop:
+=================
+
+<script>
+        let catagory = [
+            "Dhaka",
+            "Sylet",
+            "Rongpur",
+            "Dinajpur",
+            "parbotipur"
+        ]
+        for (var item in catagory) {
+            document.write(catagory[item] + "<br>");
+        }
+    </script>
+Ohject For In Loop:
+===================
+
+<script>
+        let catagory = {
+            Dhakad: "Dhaka",
+            SyletD: "Sylet",
+            RangpurD: "Rongpur",
+            DinajpurD: "Dinajpur",
+            ParbotiPurD: "parbotipur"
+        }
+
+
+        for (var item in catagory) {
+            document.write(catagory[item] + "<br>");
+        }
+    </script>
+
+String to Array:
+=======================
+ var namrStrings = "Learn With Ashraful";
+        var conArray = Array.from(namrStrings);
+        document.write(conArray);
+
+
+Array Filter:
+================
+<script>
+        var numArray = [30, 32, 45, 48, 55, 60, 80, 85, 90, 95]
+        var result = numArray.filter(function (item) {
+            return item > 50;
+        })
+        document.write(result);
+    </script>
+
+Array forEach:
+==================
+ var numberList = [20, 25, 30, 36, 40, 45, 50, 55, 80, 85, 90, 95, 96];
+        numberList.forEach(function (item) {
+            document.write(item);
+        })
+Array Include:
+====================
+
+var numberList = [20, 25, 30, 36, 40, 45, 50, 55, 80, 85, 90, 95, 96];
+        var esult = numberList.includes(36);
+        document.write(esult);
+
+Array Index Of:
+================
+var numberList = [20, 25, 30, 36, 40, 45, 50, 55, 80, 85, 90, 95, 96];
+        var esult = numberList.indexOf(36);
+        document.write(esult);
+
+Array splice remove :
+========================
+//splice(index,RemoveCount,Item);
+
+var numberList = [20, 25, 30, 36, 40, 45, 50, 55, 80, 85, 90, 95, 96];
+        var esult = numberList.splice(1, 1);
+        document.write(numberList);
+
+
+Array splice add item:
+========================
+//splice(index,RemoveCount,Item);
+ var numberList = [20, 25, 30, 36, 40, 45, 50, 55, 80, 85, 90, 95, 96];
+        //add 15 before 20
+        //first 0 means index 0,Second 0 means No remove, Third added 15 item.
+        var esult = numberList.splice(0, 0, 15);
+        document.write(numberList);
