@@ -347,3 +347,7 @@ Array splice add item:
         //first 0 means index 0,Second 0 means No remove, Third added 15 item.
         var esult = numberList.splice(0, 0, 15);
         document.write(numberList);
+
+
+new update:
+================
