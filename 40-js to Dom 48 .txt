@@ -1,0 +1,26 @@
+Dom 
+getelementbyid()
+getelementsbyclassname()
+getElementsByName()
+getElementsByTagName()
+
+<h2>Js Introduction to DOM: 40-41 </h2>
+    <div id="id"></div>
+    <div class="class1"></div>
+    <button name="Name"></button>
+    <h6></h6>
+    <script>
+        let elemnt = document.getElementById("id");
+        elemnt.innerHTML = "Eid Mubborak";
+
+        let className = document.getElementsByClassName("class1");
+        className[0].innerHTML = "Hello World";
+
+        let nameFininding = document.getElementsByName("Name");
+        nameFininding[0].innerHTML = "Fininding Name Elemnts";
+
+        let tagName = document.getElementsByTagName('h6');
+        tagName[0].innerHTML = "Fininding tag Name";
+
+
+    </script>

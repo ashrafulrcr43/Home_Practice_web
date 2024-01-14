@@ -1,0 +1,40 @@
+
+
+<h2>Navigator Class: 36</h2>
+    <script>
+        var appName = navigator.appName;
+        var appCodeName = navigator.appCodeName;
+        var appVersion = navigator.appVersion;
+        var cookieEnabled = navigator.cookieEnabled;
+        var language = navigator.language;
+        var userAgent = navigator.userAgent;
+        var platform = navigator.platform;
+        document.write(appName + "<br>");
+        document.write(appCodeName + "<br>");
+        document.write(appVersion + "<br>");
+        document.write(appVersion + "<br>");
+        document.write(cookieEnabled + "<br>");
+        document.write(language + "<br>");
+        document.write(userAgent + "<br>");
+        document.write(platform + "<br>");
+    </script>
+
+
+Js common events:
+========================
+<body onload="myEvent('Load Hoysa')">
+
+    <h2>Js common events: 38 </h2>
+    <button onclick="myEvent('Onclick Hoysa')">Onclick Event</button>
+    <button onmouseover="myEvent('onmouseover Hoysa')">Onmouseover Event</button>
+    <button onmouseout="myEvent('Onmouseout Hoysa')">Onmouseout Event</button> <br>
+    <input onchange="myEvent('Onchange Hoysa')"><br>
+    <input onkeyup="myEvent('Onkeyup Hoysa')"><br>
+    <input onkeydown="myEvent('Onkeydown Hoysa')"><br>
+    <script>
+        function myEvent(msg) {
+            console.log(msg);
+        }
+
+    </script>
+</body>
