@@ -1,0 +1,3 @@
+<button onclick="document.getElementById('myImage').src = 'light/pic_bulbon.gif'">Light On</button>
+    <img id="myImage" src="light/pic_bulboff.gif" alt="">
+    <button onclick="document.getElementById('myImage').src = 'light/pic_bulboff.gif'">Light Off</button>
